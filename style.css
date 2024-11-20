@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 10px;
+    padding: 0;
+    background-image: url('img/background.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #FBF5F3;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container{
+    background-color: #fbf5f324;
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    width: 50%;
+    min-height:  300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Garante que o conteúdo comece no topo */
+    padding: 30px;
+    box-shadow: 2px 2px 2px #522B47;
+}
+
+.input-container{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+}
+
+.add-btn{
+    background-color: #522B47;
+    color: #FBF5F3;
+    border: none;
+    width: 80px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.add-btn:hover{
+    background-color: #7f4c70;
+    transition: 0.1s;
+}
+
+input{
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    font-size: 18px;
+    padding-inline: 10px;
+}
+
+img{
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.item:hover img{
+    opacity: 1;
+}
+
+.list{
+    padding: 20px;
+    width: 100%;
+}
+
+.list-itens{
+    list-style: none;
+}
+
+.item{
+    background-color: #ffffff96;
+    border-radius: 10px;
+    color: #0F0E0E;
+    padding: 20px;
+    box-shadow: 1px 2px 2px #522b475a;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    cursor: pointer;
+    height: 30px;
+}
+
+.check{
+    background-color: #ffffff49;
+    color: #FBF5F3;
+    text-decoration: line-through;
+}
